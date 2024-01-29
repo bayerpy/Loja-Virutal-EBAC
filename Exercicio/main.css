@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    padding: 12px 0;
+    background-color: brown;
+    color: aliceblue;
+}
+
+.side {
+    display: inline;
+    margin-left: 12px;
+}
+
+.none {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-flex {
+    display: flex;
+}
+
+#arte img {
+    max-width: 275px;
+    max-height: 325px;
+    margin-right: 50px;
+}
+
+section {
+    padding: 48px 0 ;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+.lista-produtos li {
+    list-style: none;
+    max-width: 25%;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.lista-produtos li img {
+    max-width: 100%;
+}
+
+.lista-produtos li h3 {
+    margin: 16px 0;
+}
+
+.prod-espacamento {
+    margin: 0 5%;
+}
+
+.lista-produtos li button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: darkgreen;
+    color: aliceblue;
+    font-size: 10px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.lista-produtos li strong {
+    margin: 8px 0;
+    display: block;
+}
+
+.container h2{
+    color: brown;
+    width: 100%;
+    border-bottom: 2px solid brown;
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        display: block;
+        max-width: 90%;
+    }
+    .lista-produtos{
+        display: block;
+    }
+    .prod-espacamento {
+        margin: 0 0%;
+    }
+
+    .lista-produtos li {
+        list-style: none;
+        max-width: 100%;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .side {
+        display: block;
+        margin-left: 12px;
+    }
+
+    header .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #arte img {
+        max-width: 100%;
+        max-height: 100%;
+        margin-right: 50px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width:1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    #arte div {
+        display: block;
+    }
+
+    #arte img {
+        max-width: none;
+        max-height: none;
+        margin-right: none;
+        width: 650px;
+        height: 650px;
+    }
+
+    .lista-produtos {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+    }
+
+    .lista-produtos li{
+        max-width: 45%;
+    }
+
+}
